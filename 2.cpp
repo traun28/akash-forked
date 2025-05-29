@@ -35,4 +35,32 @@ bool isPrime(int n){
       }
     }
   return is_prime;
+#include <iostream> // Required for input (cin) and output (cout) operations
+
+// Function to add two integers
+int addNumbers(int a, int b) {
+    return a + b;
 }
+
+int main() {
+    int num1; // Declare an integer variable to store the first number
+    int num2; // Declare an integer variable to store the second number
+
+    // Prompt the user to enter the first number
+    std::cout << "Enter the first integer: ";
+    // Read the first number from the user's input
+    std::cin >> num1;
+
+    // Prompt the user to enter the second number
+    std::cout << "Enter the second integer: ";
+    // Read the second number from the user's input
+    std::cin >> num2;
+
+    // Call the addNumbers function and store the result
+    int sum = addNumbers(num1, num2);
+
+    // Print the result to the console
+    std::cout << "The sum of " << num1 << " and " << num2 << " is: " << sum << std::endl;
+
+    return 0; // Indicate successful execution
+}}
